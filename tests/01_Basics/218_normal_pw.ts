@@ -1,4 +1,6 @@
-import {chromium, Browser, BrowserContext, Page} from 'playwright';
+import {chromium} from 'playwright';
+import type {Browser, BrowserContext, Page} from 'playwright';
+
 async function run(){
     let browser: Browser = await chromium.launch({headless: false});
     let context: BrowserContext = await browser.newContext();
